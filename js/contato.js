@@ -1,9 +1,6 @@
 // Initialize Firebase
  
-  
-
-
-  var LeadRef = firebase.database().ref('Leads');
+ var LeadRef = firebase.database();
 
 
 //Ref form
