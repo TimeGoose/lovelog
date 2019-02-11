@@ -1,15 +1,15 @@
 // Initialize Firebase
- // Initialize Firebase
-  
+ 
   var config = {
-    apiKey: "AIzaSyCgxhj1tTQ4HKGpsSmZ-umH-IKTRKEQx8M",
-    authDomain: "repoteste-bc0d0.firebaseapp.com",
-    databaseURL: "https://repoteste-bc0d0.firebaseio.com",
-    projectId: "repoteste-bc0d0",
-    storageBucket: "repoteste-bc0d0.appspot.com",
-    messagingSenderId: "1086930849101"
+    apiKey: "AIzaSyC-bvrk1HJ3OsBXMn-Xp6jda5CiWIHkCCE",
+    authDomain: "lovelog-code.firebaseapp.com",
+    databaseURL: "https://lovelog-code.firebaseio.com",
+    projectId: "lovelog-code",
+    storageBucket: "lovelog-code.appspot.com",
+    messagingSenderId: "952561236834"
   };
   firebase.initializeApp(config);
+
 
 
   var LeadRef = firebase.database().ref('Leads');
