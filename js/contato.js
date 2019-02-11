@@ -1,8 +1,5 @@
 // Initialize Firebase
- var LeadRef: DatabaseReference!
-
-LeadRef = Database.database().reference()
-
+var LeadRef = firebase.database().ref('Leads');
 
 
 
