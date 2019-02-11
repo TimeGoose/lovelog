@@ -59,7 +59,12 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/navegacao.js"></script>
+<<<<<<< HEAD
+    <script src="contato.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+=======
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+>>>>>>> contato
 
 </body>
 </html>
