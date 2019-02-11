@@ -2,60 +2,88 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LoveLOG</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
-    <script src="js/contato.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>LoveLOG</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+  <script src="js/contato.js"></script>
+
+  <link rel="shortcut icon" href="img/favicon_loovelog.svg" type="image/x-icon" />
+
 </head>
 
 <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-            <a class="navbar-brand" href="#paginas/Home.html">
-                <img src="img/logo_lovelog.svg" height="45" alt="Logo LoveLOG"><span class="sr-only">(current)</span>
-            </a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto text-light">
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Categorias
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">1</a>
-                        <a class="dropdown-item" href="#">2</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">3</a>
-                      </div>
-                    </li>
-                    <li class="nav-item text-light">
-                        <a class="nav-link text-light" wm-link="#paginas/Sobre.html">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" wm-link="#paginas/Contato.html">Contato</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <a class="navbar-brand" href="#paginas/Home.html">
+      <img src="img/logo_lovelog.svg" height="45" alt="Logo LoveLOG">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" wm-link="#paginas/Home.html"><span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Categorias
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">1</a>
+            <a class="dropdown-item" href="#">2</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">3</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" wm-link="#paginas/Sobre.html">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" wm-link="#paginas/Contato.html">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-    <main class="p-1" wm-link-destino></main>
+  <main class="p-1" wm-link-destino></main>
 
-    <footer class="footer mt-auto py-2 bg-secondary">
-      <div class="container">
-        
+  <footer class="footer mt-auto py-2 bg-secondary">
+    <div class="container">
+      <ul>
+        <li><img src="img/logo_lovelog.svg" height="45" alt="Logo LoveLOG"></li>
+      </ul>
+
+      <div class="nav-footer">
+        <nav>
+          <h3>Sobre</h3>
+          <a href="#" class="link-footer">Sobre o Tableless</a>
+          <a href="#" class="link-footer">Contato</a>
+        </nav>
+        <nav>
+          <h3>Acompanhe</h3>
+          <a href="#" rel="noopener" title="#" class="link-footer">ssss</a>
+        </nav>
+        <nav>
+          <h3>Comunidade</h3>
+          <a href="#" rel="noopener" title="#">111</a>
+          <a href="#" rel="noopener" title="#">111</a>
+          <a href="#" rel="noopener" title="#">111</a>
+        </nav>
       </div>
-    </footer>
+    </div>
+  </footer>
 
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/navegacao.js"></script>
-    <script>
-        
-    </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/navegacao.js"></script>
+
 </body>
+
 </html>
