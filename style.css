@@ -1,0 +1,10 @@
+.banner{
+	background-image: url('img/02_Goose_Blog_banner.jpg');
+	height: 400px;
+}
+
+
+.post-principal{
+	margin-top: 30px;
+	align-content: center;
+}
