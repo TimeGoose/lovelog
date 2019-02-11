@@ -1,13 +1,4 @@
-var config = {
-          apiKey: "AIzaSyC-bvrk1HJ3OsBXMn-Xp6jda5CiWIHkCCE",
-          authDomain: "lovelog-code.firebaseapp.com",
-          databaseURL: "https://lovelog-code.firebaseio.com",
-          projectId: "lovelog-code",
-          storageBucket: "lovelog-code.appspot.com",
-          messagingSenderId: "952561236834"
-        };
-        
-        firebase.initializeApp(config);
+
 
 // Reference messages collection
 var messagesRef = firebase.database().ref('messages');
@@ -20,7 +11,7 @@ function submitForm(e){
   e.preventDefault();
 
   // Get values
-  var name = getInputVal('nome');
+  var nome = getInputVal('nome');
   var email = getInputVal('email');
   
 
@@ -45,10 +36,10 @@ function getInputVal(id){
 }
 
 // Save message to firebase
-function saveMessage(name, email){
+function saveMessage(nome, email){
   var newMessageRef = messagesRef.push();
   newMessageRef.set({
-    name: name,
+    nome: nome,
     email:email,
   });
 }
