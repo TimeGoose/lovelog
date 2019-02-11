@@ -1,4 +1,13 @@
-
+var config = {
+          apiKey: "AIzaSyC-bvrk1HJ3OsBXMn-Xp6jda5CiWIHkCCE",
+          authDomain: "lovelog-code.firebaseapp.com",
+          databaseURL: "https://lovelog-code.firebaseio.com",
+          projectId: "lovelog-code",
+          storageBucket: "lovelog-code.appspot.com",
+          messagingSenderId: "952561236834"
+        };
+        
+      firebase.initializeApp(config);
 
 // Reference messages collection
 var messagesRef = firebase.database().ref('messages');
