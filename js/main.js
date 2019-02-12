@@ -17,15 +17,18 @@
   document.getElementById('formAssinatura').addEventListener('submit', submitForm);
 
   function submitForm(e){
-      e.preventDefault();
+    e.preventDefault();
 
     //get values
     let name = getInputVal('name');
     let email = getInputVal('email');
     let car = getInputVal('car');
+    let ip = document.getElementById('ip');
 
+
+    console.log(name, email, car, ip)
     //save message
-    saveMessage(name, email, car);
+    saveMessage(name, email, car, ip);
   }
 
   //func para pegar os valores
@@ -41,5 +44,6 @@
           name: name,
           email: email,
           car: car,
+          ip: ip,
       });
   } 

@@ -29,12 +29,20 @@
   <link rel="shortcut icon" href="img/favicon_loovelog.svg" type="image/x-icon" />
   <link rel="stylesheet" type="text/css" href="style.css">
 
+  <!--funcao para pegar o ip-->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $.get("https://api.ipify.org?format=json", function (data) {
+        $("#ip").html(data.ip);
+      });
+    });
+  </script>
 </head>
 
 <body>
   <!----menu do topo-->
   <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-    <a class="navbar-brand" href="#paginas/Home.html">
+    <a class="navbar-brand" href="index.html">
       <img src="img/logo_lovelog.svg" height="37" alt="Logo LoveLOG">
     </a>
 
@@ -112,24 +120,24 @@
     </section>
   </div>
 
-  <div class="row"></div>
-    <div class="col-2"></div>
-      <div class="card mb-3 col-8">
-        <img src="img/motoristaIndependente_mini.png" class="card-img-top img-fluid" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Motorista Independente: Vamos te mostrar o que você precisa saber para ganhar mais
-            dinheiro, fazendo o mesmo que você já faz</h5>
-          <p class="card-text">Existem duas formas de aumentar a sua renda: ou você gasta menos, ou você cria uma fonte de
-            renda.
-            Nesse
-            post, nós vamos falar de como você pode aumentar a sua renda, fazendo o mesmo trabalho que já faz hoje!
-            Fique tranquilo, você não precisa fazer jogo de azar, apostas ou empréstimos em banco...</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
+  <div class="container">
+    <div class="row"></div>
+    <div class="card mb-3 col-10 align-self-center">
+      <img src="img/motoristaIndependente_mini.png" class="card-img-top img-fluid rounded" width="200" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Motorista Independente: Vamos te mostrar o que você precisa saber para ganhar mais
+          dinheiro, fazendo o mesmo que você já faz</h5>
+        <p class="card-text">Existem duas formas de aumentar a sua renda: ou você gasta menos, ou você cria uma fonte
+          de
+          renda.
+          Nesse
+          post, nós vamos falar de como você pode aumentar a sua renda, fazendo o mesmo trabalho que já faz hoje!
+          Fique tranquilo, você não precisa fazer jogo de azar, apostas ou empréstimos em banco...</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
     </div>
-    <div class="col-2"></div>
   </div>
-
+  
   <!---RODAPÉ-->
   <footer class="footer mt-auto py-2 bg-secondary">
     <div class="container">
@@ -173,6 +181,7 @@
             </div>
             <div class="form-group row">
               <button type="submit" class="btn btn-primary col-2">Enviar</button>
+            <input hidden id="ip">
             </div>
           </form>
         </div>
@@ -181,6 +190,9 @@
   </div>
 
   <!--SCRIPTS USADOS-->
+
+
+
   <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
   <script src="js/main.js"></script>
   <script src="js/navegacao.js"></script>
