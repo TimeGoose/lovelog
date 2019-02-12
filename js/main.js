@@ -35,7 +35,7 @@
   }
 
   //save msg to firebase
-  function saveMessage(name, email, car){
+  function saveMessage(name, email, car, ip){
       var newMessageRef = messagesRef.push()
 
       newMessageRef.set({
