@@ -23,10 +23,8 @@
     let name = getInputVal('name');
     let email = getInputVal('email');
     let car = getInputVal('car');
-    let ip = document.getElementById('ip');
+    let ip = $("#ip").text();
 
-
-    console.log(name, email, car, ip)
     //save message
     saveMessage(name, email, car, ip);
   }
