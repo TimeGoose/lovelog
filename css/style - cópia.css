@@ -324,7 +324,7 @@ h1{
 			width: 168px;
 			height: 45px;
 			font-family: 'Open Sans';
-			font-size: 18px;
+			font-size: 24px;
 			font-weight: normal;
 			font-style: normal;
 			font-stretch: normal;
@@ -332,6 +332,8 @@ h1{
 			letter-spacing: normal;
 			color: #0045dd;
 
+			width: 169px;
+			height: 57px;
 			border-radius: 100px;
 			background-color: #24ecf8;
 		  }
@@ -339,14 +341,14 @@ h1{
 
 	.form-text-white{
 		color: white;
-		font-size: 16px;
+		font-size: 18px;
 		font-family: 'Open Sans'; 
 		text-align: center;	
 	}
 	
 	.form-text-contato{
 		color: white;
-		font-size: 18px;
+		font-size: 24px;
 		font-family: 'Open Sans'; 
 		text-align: center;	
 		line-height: normal;
@@ -354,7 +356,7 @@ h1{
 
 	.Contato {
 		font-family: 'Open Sans';
-		font-size: 50px;
+		font-size: 60px;
 		font-weight: bold;
 		font-style: normal;
 		font-stretch: normal;
