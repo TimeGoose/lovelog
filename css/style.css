@@ -76,6 +76,7 @@
 		 top:  100px;
 		 z-index: 999;
 		 text-align: center;
+		 color: white;
 	}
 
 	nav.menu-mobile li{
@@ -202,6 +203,8 @@
   			.container{
   				flex-direction: column;
   			}
+
+  		
   
 }
 
