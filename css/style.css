@@ -254,7 +254,7 @@ h1{
 		width: 100%;
 		
 	}
-	#backgroundContato{
+	.backgroundContato{
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
@@ -262,8 +262,7 @@ h1{
 		background-image: url("../img/contato-img-back.jpg");
 		color: white;
 		height: 100%;
-		min-height: 1273px;
-		line-height: 5px;
+		min-height: 1000px;
 	}
 
 
@@ -317,9 +316,27 @@ h1{
 		font-size: 18px;
 		font-family: 'Open Sans'; 
 		text-align: center;	
-
 	}
 	
+	.form-text-contato{
+		color: white;
+		font-size: 24px;
+		font-family: 'Open Sans'; 
+		text-align: center;	
+		line-height: normal;
+	}
+
+	.Contato {
+		font-family: 'Open Sans';
+		font-size: 60px;
+		font-weight: bold;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.05;
+		letter-spacing: -0.6px;
+		color: #ffffff;
+		text-align: start;
+	  }
 
 	/* Mobile */
 		@media screen and (max-width: 768px){

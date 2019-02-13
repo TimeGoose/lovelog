@@ -38,41 +38,109 @@
   </script>
 </head>
 
-<body >
- 
-<header>
+<body>
+
+  <header>
 
     <div class="topo">
-    <div class="container">
+      <div class="container">
 
-          <div class="logo"><a href="index.html"><img src="img/logo_lovelog.svg" height="37" alt="Logo LoveLOG"></a></div>
+        <div class="logo"><a href="index.html"><img src="img/logo_lovelog.svg" height="37" alt="Logo LoveLOG"></a></div>
 
         <nav class="menu-desktop">
-            <ul>
-              <li><a href="index.html">INSCREVA-SE</a></li>
-              <li><a href="sobre.html">SOBRE</a></li>
-              <li><a href="contato.html">CONTATO</a></li>
-              <li><img src="img/busca.png"></li>
-            </ul>
-         </nav>
+          <ul>
+            <li><a href="index.html">INSCREVA-SE</a></li>
+            <li><a href="sobre.html">SOBRE</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+            <li><img src="img/busca.png"></li>
+          </ul>
+        </nav>
 
         <nav class="menu-mobile">
-            <h2><i class="fas fa-bars"></i></i></h2>
-            <ul>
-              <li><a href="index.html"></a>INSCREVA-SE</li>
-              <li><a href="sobre.html"></a>SOBRE</li>
-              <li><a href="contato.html"></a>CONTATO</li>
-            </ul>
+          <h2><i class="fas fa-bars"></i></i></h2>
+          <ul>
+            <li><a href="index.html"></a>INSCREVA-SE</li>
+            <li><a href="sobre.html"></a>SOBRE</li>
+            <li><a href="contato.html"></a>CONTATO</li>
+          </ul>
         </nav>
-    </div><!-- container -->
+      </div><!-- container -->
+    </div>
+  </header>
+
+  <div class="backgroundContato p-5">
+
+    <div class="container ml-1">
+      <form id="formContato">
+
+        <h2 class="Contato pb-3">Contato</h2>
+        <div class="form-group row">
+          <label for="InputName" class="form-text-contato col-6 p-1">Nome</label>
+          <div class="col-7"></div>
+          <input type="text" class="form-control col-6 p-2" id="name" placeholder="Seu nome" required>
+        </div>
+        <div class="form-group row">
+          <label for="InputEmail" class="form-text-contato col-6 p-1">Endereço de email</label>
+          <div class="col-7"></div>
+          <input type="email" class="form-control col-6 p-2" id="email" aria-describedby="emailHelp" placeholder="Seu email"
+            required>
+        </div>
+        <div class="form-group row">
+          <label for="InputCar" class="form-text-contato col-6 p-1">O seu veículo tem um porte proximo de:</label>
+          <div class="col-7"></div>
+          <select id="car" class="form-control col-6 p-3" placeholder="Seu carro">
+            <option selected>Selecione...</option>
+            <option>Moto</option>
+            <option>Van</option>
+            <option>Fiorino</option>
+            <option>Vuc Pequeno (HR)</option>
+            <option>Vuc Médio (Iveco)</option>
+            <option>Vuc Grande</option>
+            <option>Nenhum</option>
+          </select>
+        </div>
+        <div class="form-group row">
+          <label for="inputState" class="form-text-contato col-6 p-1">Você trabalha/quer trabalhar com entregas para
+            ganhar
+            mais dinheiro?</label>
+          <div class="col-7"></div>
+          <select id="driver" class="form-control col-6 p-3">
+            <option selected>Selecione...</option>
+            <option>Sim</option>
+            <option>Não</option>
+          </select>
+        </div>
+        <div class="form-group row">
+          <label for="inputState" class="form-text-contato col-6 p-1">Você tem ANTT ou Condumoto/Motofrete?</label>
+          <div class="col-7"></div>
+          <select id="antt" class="form-control col-6 p-4">
+            <option selected>Selecione...</option>
+            <option>Sim</option>
+            <option>Não</option>
+          </select>
+        </div>
+        <div class="form-group row">
+          <label for="Mensagem" class="form-text-contato col-6">Mensagem</label>          
+          <div class="col-7"></div>
+          <textarea id="message" rows="3" class="form-control col-6"></textarea>
+        </div>
+        <div class="form-group row">
+          <div class="col-6">
+          <input class="form-check-input" type="checkbox" value="" id="aceitaLead" checked>
+          <label class="form-text-white form-check-label" for="defaultCheck1" class="col-5">
+            Você aceita receber nossas dicas?
+          </label>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-6">
+            <button type="submit" class="btn">Enviar</button><br>
+            <input hidden id="ip">
+          </div>
+        </div>
+      </form>
+    </div>
   </div>
-</header>
-
-<div id="backgroundContato"></div>
-
-
-
-
 
 
 
@@ -80,7 +148,7 @@
     <div class="container">
       <div>
 
-      <div class="logo"><a href="index.html"><img src="img/logo_lovelog.svg" height="37" alt="Logo LoveLOG"></a></div><!-- incluir redes sociais -->     
+        <div class="logo"><a href="index.html"><img src="img/logo_lovelog.svg" height="37" alt="Logo LoveLOG"></a></div><!-- incluir redes sociais -->
       </div>
       <div class="clear"></div>
 
@@ -92,7 +160,8 @@
         <p>Nosso E-mail: lovelog@outlook.com.br</p>
       </div>
 
-    </div><!--container -->
+    </div>
+    <!--container -->
   </footer>
 
 
@@ -107,9 +176,10 @@
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script>
-    $('nav.menu-mobile h2').click(function(){
+    $('nav.menu-mobile h2').click(function () {
       $('nav.menu-mobile ul').slideToggle();
     });
   </script>
 </body>
+
 </html>
