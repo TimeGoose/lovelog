@@ -40,34 +40,6 @@ var config = {
     }
 
 
-   //FORMS DE CONTATO
-  document.getElementById('formContato').addEventListener('submit', submitFormContact);
-
-  function submitFormContact(e){
-    e.preventDefault();
-
-    //get values
-    let email = getInputVal('email');
-    let name = getInputVal('name');
-    let ip = $("#ip").text();
-    let date = completeDate();
-    let car = getInputVal('car');
-    let driver = getInputVal('driver');
-    let antt = getInputVal('antt');
-    let message = getInputVal('message');
-
-    if (document.getElementById('aceitaLead').checked === true) {
-    saveLead(email, name, ip, date, car, driver, antt);    
-    console.log('oi');
-
-    }
-    saveContact(email, name, ip, date, car, driver, antt, message);
-    console.log('oi');
-
-
-    alert("Obrigado pelo contato!");
-  }
-
   //func para pegar os valores
   function getInputVal(id){
       return document.getElementById(id).value;

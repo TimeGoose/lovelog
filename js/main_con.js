@@ -13,33 +13,6 @@ var config = {
   var contactRef = firebase.database().ref('contact');
   var leadRef = firebase.database().ref('leads');
 
-
- //FORMS DE ASSINATURA
-  //form submit
-  document.getElementById('formAssinatura').addEventListener('submit', submitForm);
-
-  function submitForm(e){
-    e.preventDefault();
-
-    //get values
-    let email = getInputVal('email');
-    let name = getInputVal('name');
-    let ip = $("#ip").text();
-    let date = completeDate();
-    let car = getInputVal('car');
-    let driver = getInputVal('driver');
-    let antt = getInputVal('antt');
-
-    //save message
-    saveLead(email, name, ip, date, car, driver, antt);
-    console.log('oi');
-
-    $('#formpoup').modal('hide');
-
-    alert("Em breve voce receberá novas dicas!");
-    }
-
-
    //FORMS DE CONTATO
   document.getElementById('formContato').addEventListener('submit', submitFormContact);
 
