@@ -39,7 +39,7 @@ if (document.getElementsByTagName('form').id == 'formAssinatura'){
 
     alert("Em breve voce receberá novas dicas!");
     }
-} else {
+} else if (document.getElementsByTagName('form').id == 'formContato'){
 
    //FORMS DE CONTATO
   document.getElementById('formContato').addEventListener('submit', submitFormContact);
