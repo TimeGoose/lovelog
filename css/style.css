@@ -2,4 +2,157 @@
 	margin:  0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif; 
 }
+
+	.clear{clear: both;}
+
+
+
+	.topo{
+		
+		background-color: #0045DD;
+		height: 70px;
+		padding-top: 15px;
+
+	}
+
+
+	.logo{
+		float: left;
+	}
+
+	.titulo{
+		color: #0045DD;
+		text-align: center;
+		padding: 40px;
+	}
+
+	.bannerHome{
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		text-align: center;	
+	}
+
+
+	nav.menu-desktop li{
+		color: #fff;
+		display: inline-block;
+		padding-left: 70px;
+	}
+
+
+
+	nav.menu-desktop li.selecionado a{
+		font-weight: bold;
+	}
+
+	nav.menu-desktop a{
+		color: #fff;
+		text-decoration: none;
+	}
+
+	nav.menu-desktop a:hover{
+		font-weight: bold;
+			
+	}
+
+	nav.menu-mobile{
+	  display: none;
+	  float: right;
+	}
+
+	nav.menu-mobile h2{
+		cursor: pointer;
+	}
+
+	nav.menu-mobile ul{
+		 display: none;
+		 width: 100%;
+		 background: white;
+		 position: absolute;
+		 left: 0;
+		 top:  100px;
+		 z-index: 999;
+		 text-align: center;
+	}
+
+	nav.menu-mobile li{
+		padding: 8px 0;
+		border-bottom: 1px dotted #00BFFF;	
+	}
+
+	nav.menu-mobile li.selecionado{
+		background: #04B4AE;
+	}
+
+
+	nav.menu-mobile a{
+		display: block;
+		color: #08298A;
+		text-decoration: none;
+	}
+
+	
+
+	nav.menu-desktop{
+		float: right;
+
+	}
+
+
+	nav.menu-desktop ul{
+		position: relative;
+		top: 8px;
+	}
+
+
+	.rodape{
+	  width: 100%;
+	  height: 120px;
+	  background-color: #4a3f89;
+
+	}
+
+	.rodape img{
+		margin-top: 20px;
+	}	 
+
+	.direitos p{
+		display: inline;
+		padding-right: 40px;		
+	} 
+
+	.direitos a{
+		text-decoration: none;
+		color: #ffffff;
+	}
+	
+	.direitos{
+		  font-family: OpenSans;
+		  font-size: 15px;
+		  font-weight: 300;
+		  font-style: normal;
+		  font-stretch: normal;
+		  line-height: normal;
+		  letter-spacing: normal;
+		  color: #ffffff;
+		  margin-top: 20px;
+	}
+
+	
+
+
+
+	
+	
+
+	/* Mobile */
+		@media screen and (max-width: 768px){
+
+			nav.menu-mobile{display: block;}
+			nav.menu-desktop{display: none;}
+
+		}
+
