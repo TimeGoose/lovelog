@@ -12,7 +12,7 @@
   //reference msg collect
   var messagesRef = firebase.database().ref('messages');
 
-
+ //FORMS DE ASSINATURA
   //form submit
   document.getElementById('formAssinatura').addEventListener('submit', submitForm);
 
@@ -20,13 +20,44 @@
     e.preventDefault();
 
     //get values
-    let name = getInputVal('name');
     let email = getInputVal('email');
-    let car = getInputVal('car');
+    let name = getInputVal('name');
     let ip = $("#ip").text();
+    let date = completeDate();
+    let car = getInputVal('car');
+    let driver = getInputVal('driver');
+    let antt = getInputVal('antt');
 
     //save message
-    saveMessage(name, email, car, ip);
+    saveLead(email, name, ip, date, car, driver, antt);
+
+    $('#formpoup').modal('hide');
+    alert("Em breve voce receberá novas dicas!");
+    }
+
+
+   //FORMS DE CONTATO
+  document.getElementById('formContato').addEventListener('submit', submitFormContact);
+
+  function submitFormContact(e){
+    e.preventDefault();
+
+    //get values
+    let email = getInputVal('email');
+    let name = getInputVal('name');
+    let ip = $("#ip").text();
+    let date = completeDate();
+    let car = getInputVal('car');
+    let driver = getInputVal('driver');
+    let antt = getInputVal('antt');
+    let message = getInputVal('message');
+
+    if (document.getElementById('aceitaLead').checked === true) {
+    saveLead(email, name, ip, date, car, driver, antt);
+    }
+    saveContact(email, name, ip, date, car, driver, antt, message);
+
+    alert("Em breve voce receberá novas dicas!");
   }
 
   //func para pegar os valores
@@ -35,13 +66,42 @@
   }
 
   //save msg to firebase
-  function saveMessage(name, email, car, ip){
+  function saveLead(email, name, ip, date, car, driver, antt){
       var newMessageRef = messagesRef.push()
 
       newMessageRef.set({
-          name: name,
           email: email,
-          car: car,
+          name: name,
           ip: ip,
+          date: date,
+          car: car,
+          driver: driver,
+          antt: antt
       });
   } 
+
+  function saveContact(email, name, ip, date, car, driver, antt, message){
+    var newMessageRef = messagesRef.push()
+
+    newMessageRef.set({
+        email: email,
+        name: name,
+        ip: ip,
+        date: date,
+        car: car,
+        driver: driver,
+        antt: antt,
+        message: message
+    });
+} 
+
+  function completeDate () {
+    now = new Date();
+    year = "" + now.getFullYear();
+    month = "" + (now.getMonth() + 1); if (month.length == 1) { month = "0" + month; }
+    day = "" + now.getDate(); if (day.length == 1) { day = "0" + day; }
+    hour = "" + now.getHours(); if (hour.length == 1) { hour = "0" + hour; }
+    minute = "" + now.getMinutes(); if (minute.length == 1) { minute = "0" + minute; }
+    second = "" + now.getSeconds(); if (second.length == 1) { second = "0" + second; }
+    return year + "-" + month + "-" + day + " " + hour + ":" + minute + ":" + second;
+  }
