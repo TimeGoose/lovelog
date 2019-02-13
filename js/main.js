@@ -10,7 +10,9 @@ var config = {
   firebase.initializeApp(config);
 
   //reference msg collect
-  var messagesRef = firebase.database().ref('messages');
+  var contactRef = firebase.database().ref('contact');
+  var leadRef = firebase.database().ref('lead');
+
 
  //FORMS DE ASSINATURA
   //form submit
@@ -68,9 +70,9 @@ var config = {
 
   //save msg to firebase
   function saveLead(email, name, ip, date, car, driver, antt){
-      var newMessageRef = messagesRef.push()
+      var newLeadRef = leadRef.push()
 
-      newMessageRef.set({
+      newLeadRef.set({
           email: email,
           name: name,
           ip: ip,
@@ -82,9 +84,9 @@ var config = {
   } 
 
   function saveContact(email, name, ip, date, car, driver, antt, message){
-    var newMessageRef = messagesRef.push()
+    var newContacteRef = contactRef.push()
 
-    newMessageRef.set({
+    newContactRef.set({
         email: email,
         name: name,
         ip: ip,
