@@ -67,11 +67,19 @@
   </div>
 </header>
 
-
-    <div class="bannerHome" >
-      <a href="#"><img src="img/02_Goose_Blog_banner.jpg"></a>
-    </div>
- 
+<!--banner-->
+<div class="bannerHome p-5">
+  <div class="row">
+  <h2 class="text-left col-5">Você quer ganhar dinheiro extra dirigindo?</h2><!----<a href="#"><img src="img/02_Goose_Blog_banner.jpg"></a> -->
+  <div class="col-8 pt-3"></div>
+  <h5 class="text-left col-5">Saiba como milhares de motoristas fazem para serem mais produtivos</h3>
+  <div class="col-8 pt-3"></div>
+  <div class="col-7 text-left p-3">
+  <button type="button" class="botaoHome" data-toggle="modal" data-target=".bd-example-modal-lg">Inscreva-se</button>
+  </div>
+  </div>
+</div>
+<!--fim banner-->
 
   <div class="container">
     <div class="titulo">     
@@ -184,6 +192,73 @@
 
     </div><!--container -->
   </footer>
+
+
+
+   <!--FORMULARIO POUPUP-->
+   <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+   aria-hidden="true" id="formpoup">
+   <div class="modal-dialog p-3 modal-lg">
+     <div class="modal-content p-4" style="background-color:#4a3f89">
+       <div class="modal-body">
+
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+           </button>
+
+         <!---inicio form-->
+         <form id="formAssinatura">
+           <div class="form-group">
+             <label for="InputName" class="form-text-white">Nome</label>
+             <input type="text" class="form-control" id="name" placeholder="Seu nome" required>
+           </div>
+           <div class="form-group">
+             <label for="InputEmail" class="form-text-white">Endereço de email</label>
+             <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Seu email"
+               required>
+             <small id="emailHelp" class="form-text text-light">Não vamos compartilhar seu email, com
+               ninguém.</small>
+           </div>
+           <div class="form-group">
+             <label for="InputCar" class="form-text-white">O seu veículo tem um porte proximo de:</label>
+             <select id="car" class="form-control" placeholder="Seu carro">
+               <option selected>Selecione...</option>
+               <option>Moto</option>
+               <option>Van</option>
+               <option>Fiorino</option>
+               <option>Vuc Pequeno (HR)</option>
+               <option>Vuc Médio (Iveco)</option>
+               <option>Vuc Grande</option>
+               <option>Nenhum</option>
+             </select>
+           </div>
+           <div class="form-group">
+             <label for="inputState" class="form-text-white">Você trabalha/quer trabalhar com entregas para ganhar
+               mais dinheiro?</label>
+             <select id="driver" class="form-control">
+               <option selected>Selecione...</option>
+               <option>Sim</option>
+               <option>Não</option>
+             </select>
+           </div>
+           <div class="form-group">
+             <label for="inputState" class="form-text-white">Você tem ANTT ou Condumoto/Motofrete?</label>
+             <select id="antt" class="form-control">
+               <option selected>Selecione...</option>
+               <option>Sim</option>
+               <option>Não</option>
+             </select>
+           </div>
+           <div class="form-group">
+             <button type="submit" class="btn ENVIAR Rectangle-43">Enviar</button><br>
+             <input hidden id="ip">
+           </div>
+         </form>
+         <!---fim form-->
+       </div>
+     </div>
+   </div>
+ </div>
 
 
   <!--SCRIPTS USADOS-->
