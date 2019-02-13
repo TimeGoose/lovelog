@@ -1,5 +1,5 @@
 // Initialize Firebase
-  var config = {
+var config = {
     apiKey: "AIzaSyDrp9ANTbTmOCk7NcLXAnJdErPw7JIR2II",
     authDomain: "lovelogform.firebaseapp.com",
     databaseURL: "https://lovelogform.firebaseio.com",
@@ -32,6 +32,7 @@
     saveLead(email, name, ip, date, car, driver, antt);
 
     $('#formpoup').modal('hide');
+
     alert("Em breve voce receberá novas dicas!");
     }
 
