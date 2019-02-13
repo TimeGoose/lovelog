@@ -58,7 +58,7 @@ var config = {
     }
     saveContact(email, name, ip, date, car, driver, antt, message);
 
-    alert("Em breve voce receberá novas dicas!");
+    alert("Obrigado pelo contato!");
   }
 
   //func para pegar os valores
