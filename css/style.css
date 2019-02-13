@@ -5,6 +5,14 @@
 	font-family: 'Open Sans', sans-serif; 
 }
 
+/*body contato*/
+#imagem{
+	background-image: url(img/bannerHome.png);
+	height: 600%;
+	width: 100%;
+}
+
+
 h1{
 
   width: 967px;
