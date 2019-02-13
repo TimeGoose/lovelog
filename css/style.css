@@ -7,9 +7,11 @@
 
 /*body contato*/
 #imagem{
-	background-image: url(img/bannerHome.png);
-	height: 600%;
-	width: 100%;
+	background-image: url(img/inscricao-img-back.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;	
 }
 
 
