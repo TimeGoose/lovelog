@@ -5,6 +5,40 @@
 	font-family: 'Open Sans', sans-serif; 
 }
 
+h1{
+
+  width: 967px;
+  height: 90px;
+  object-fit: contain;
+  font-family: OpenSans;
+  font-size: 40px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.05;
+  letter-spacing: normal;
+  color: #0045dd;
+  margin-bottom: 50px;
+}
+
+.pnoticia{
+
+  width: 970px;
+  height: 77px;
+  object-fit: contain;
+  font-family: OpenSans;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #696767;
+  padding-left: 65px;
+  text-align: left;
+}
+
+
 	.clear{clear: both;}
 
 
