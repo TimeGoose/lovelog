@@ -265,7 +265,16 @@ h1{
 		min-height: 1000px;
 	}
 
-
+	.backgroundInscrevaSe{
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		text-align: center;	
+		background-image: url("../img/inscricao-img-back.jpg");
+		color: white;
+		height: 100%;
+		min-height: 1000px;
+	}
 
 	.bannerSobre{
 		background-repeat: no-repeat;
@@ -309,6 +318,25 @@ h1{
 		letter-spacing: normal;
 		color: #4a3f89;
 		font-style: bold;
+	  }
+
+	  .botaoContato {
+			width: 168px;
+			height: 45px;
+			font-family: 'Open Sans';
+			font-size: 24px;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: #0045dd;
+
+			width: 169px;
+			height: 57px;
+			border-radius: 100px;
+			background-color: #24ecf8;
+		  }
 	  }
 
 	.form-text-white{

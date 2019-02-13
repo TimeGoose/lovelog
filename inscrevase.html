@@ -39,67 +39,123 @@
 </head>
 
 <body>
-<header>
+  <header>
 
     <div class="topo">
-    <div class="container">
+      <div class="container">
 
-          <div class="logo"><a href="index.html"><img src="img/logo_lovelog.svg" height="37" alt="Logo LoveLOG"></a></div>
+        <div class="logo"><a href="index.html"><img src="img/logo_lovelog.svg" height="37" alt="Logo LoveLOG"></a></div>
 
         <nav class="menu-desktop">
-            <ul>
-              <li><a href="inscrevase.html">INSCREVA-SE</a></li>
-              <li><a href="sobre.html">SOBRE</a></li>
-              <li><a href="contato.html">CONTATO</a></li>
-              <li><img src="img/busca.png"></li>
-            </ul>
-         </nav>
+          <ul>
+            <li><a href="inscrevase.html">INSCREVA-SE</a></li>
+            <li><a href="sobre.html">SOBRE</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+            <li><img src="img/busca.png"></li>
+          </ul>
+        </nav>
 
         <nav class="menu-mobile">
-            <h2><i class="fas fa-bars"></i></i></h2>
-            <ul>
-              <li><a href="inscrevase.html"></a>INSCREVA-SE</li>
-              <li><a href="sobre.html"></a>SOBRE</li>
-              <li><a href="contato.html"></a>CONTATO</li>
-            </ul>
+          <h2><i class="fas fa-bars"></i></i></h2>
+          <ul>
+            <li><a href="inscrevase.html"></a>INSCREVA-SE</li>
+            <li><a href="sobre.html"></a>SOBRE</li>
+            <li><a href="contato.html"></a>CONTATO</li>
+          </ul>
         </nav>
-    </div><!-- container -->
-  </div>
-</header>
+      </div><!-- container -->
+    </div>
+  </header>
 
-    <section class="inscrevase">
-        <div class="container">
-          <h1>Você está a poucos passos de uma carga  de oportunidades! </h1>
+  <div class="backgroundInscrevaSe p-5">
+
+    <div class="container ml-1">
+      <form id="formAssinatura">
+          <div class="form-group row">
+              <h1 class="Contato p-3">Você está a poucos passos de uma carga de oportunidades! </h1>
+            </div>
+        <h2 class="Contato pb-3">Contato</h2>
+        <div class="form-group row">
+          <label for="InputName" class="form-text-contato col-6 p-1">Nome</label>
+          <div class="col-7"></div>
+          <input type="text" class="form-control col-6 p-2" id="name" placeholder="Seu nome" required>
         </div>
-      
-    </section>
+        <div class="form-group row">
+          <label for="InputEmail" class="form-text-contato col-6 p-1">Endereço de email</label>
+          <div class="col-7"></div>
+          <input type="email" class="form-control col-6 p-2" id="email" aria-describedby="emailHelp" placeholder="Seu email"
+            required>
+        </div>
+        <div class="form-group row">
+          <label for="InputCar" class="form-text-contato col-6 p-1">O seu veículo tem um porte proximo de:</label>
+          <div class="col-7"></div>
+          <select id="car" class="form-control col-6 p-3" placeholder="Seu carro">
+            <option selected>Selecione...</option>
+            <option>Moto</option>
+            <option>Van</option>
+            <option>Fiorino</option>
+            <option>Vuc Pequeno (HR)</option>
+            <option>Vuc Médio (Iveco)</option>
+            <option>Vuc Grande</option>
+            <option>Nenhum</option>
+          </select>
+        </div>
+        <div class="form-group row">
+          <label for="inputState" class="form-text-contato col-6 p-1">Você trabalha/quer trabalhar com entregas para
+            ganhar
+            mais dinheiro?</label>
+          <div class="col-7"></div>
+          <select id="driver" class="form-control col-6 p-3">
+            <option selected>Selecione...</option>
+            <option>Sim</option>
+            <option>Não</option>
+          </select>
+        </div>
+        <div class="form-group row">
+          <label for="inputState" class="form-text-contato col-6 p-1">Você tem ANTT ou Condumoto/Motofrete?</label>
+          <div class="col-7"></div>
+          <select id="antt" class="form-control col-6 p-4">
+            <option selected>Selecione...</option>
+            <option>Sim</option>
+            <option>Não</option>
+          </select>
+        </div>
+        <div class="form-group row">
+          <div class="col-6">
+            <button type="submit" id="enviar" class="btn botaoContato">Enviar</button><br>
+            <input hidden id="ip">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
 
 
 
   <section class="mini-conteudo">
     <div class="container">
-    <div  class="row">     
-      
-    <div class="col-sm-4 card">
-      <img src="img/home-img01-grande.jpg">
-      <p>Dirigir por longas horas, muitas vezes em estradas que nem sempre...</p>
-      <p><i class="fas fa-user"></i></i>WILLIAN TANG</p>
-    </div>
+      <div class="row">
 
-    <div class="col-sm-4 card" >
-      <img src="img/01_Goose_Blog_Entregador.jpg">
-      <p>Existem duas formas de aumentar a sua renda: ou você gasta menos, ou você...</p>
-      <p><i class="fas fa-user"></i></i>WILLIAN TANG</p>
-    </div>
+        <div class="col-sm-4 card">
+          <img src="img/home-img01-grande.jpg">
+          <p>Dirigir por longas horas, muitas vezes em estradas que nem sempre...</p>
+          <p><i class="fas fa-user"></i></i>WILLIAN TANG</p>
+        </div>
 
-    <div class="col-sm-4 card">
-      <img src="img/01_Goose_Blog_Van_Thumb.jpg">
-      <p>A jornada puxada dos caminhoneiros pode levar a estilos de vida pouco...</p>
-      <p><i class="fas fa-user"></i></i>WILLIAN TANG</p>
+        <div class="col-sm-4 card">
+          <img src="img/01_Goose_Blog_Entregador.jpg">
+          <p>Existem duas formas de aumentar a sua renda: ou você gasta menos, ou você...</p>
+          <p><i class="fas fa-user"></i></i>WILLIAN TANG</p>
+        </div>
+
+        <div class="col-sm-4 card">
+          <img src="img/01_Goose_Blog_Van_Thumb.jpg">
+          <p>A jornada puxada dos caminhoneiros pode levar a estilos de vida pouco...</p>
+          <p><i class="fas fa-user"></i></i>WILLIAN TANG</p>
+        </div>
+
+      </div>
     </div>
-     
-    </div>
-  </div>
   </section>
 
 
@@ -109,7 +165,7 @@
     <div class="container">
       <div>
 
-      <div class="logo"><a href="index.html"><img src="img/logo_lovelog.svg" height="37" alt="Logo LoveLOG"></a></div><!-- incluir redes sociais -->     
+        <div class="logo"><a href="index.html"><img src="img/logo_lovelog.svg" height="37" alt="Logo LoveLOG"></a></div><!-- incluir redes sociais -->
       </div>
       <div class="clear"></div>
 
@@ -121,24 +177,24 @@
         <p>Nosso E-mail: lovelog@outlook.com.br</p>
       </div>
 
-    </div><!--container -->
+    </div>
+    <!--container -->
   </footer>
 
 
   <!--SCRIPTS USADOS-->
 
   <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main_ass.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
-
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script>
-    $('nav.menu-mobile h2').click(function(){
+    $('nav.menu-mobile h2').click(function () {
       $('nav.menu-mobile ul').slideToggle();
     });
   </script>
 </body>
+
 </html>
