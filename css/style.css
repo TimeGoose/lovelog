@@ -3,3 +3,51 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+.form-text-white{
+	color: white;
+	font-size: 12px;
+	font-family: OpenSans;
+	align-content: center;
+	text-align: center;
+}
+
+.Rectangle-43 {
+	width: 100.5px;
+	height: 28.5px;
+	border-radius: 50px;
+	background-color: #24ecf8;
+	align-content: center;
+	text-align: center;
+  }
+  
+  .Rectangle-43:hover, .Rectangle-43:hover {
+	width: 84.5px;
+	height: 28.5px;
+	border-radius: 50px;
+	background-color: #6ceff3;
+	align-content: center;
+	text-align: center;
+  }
+  
+.Rectangle-43:focus, .Rectangle-43.focus {
+	box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
+  }
+
+  .ENVIAR {
+	width: 84px;
+	height: 22.5px;
+	font-family: OpenSans;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #0045dd;
+  }
+
+  @font-face {
+	font-family: OpenSans;
+	src: url('/css/fonts/OpenSans-Regular.ttf');
+}
