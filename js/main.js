@@ -11,8 +11,9 @@ var config = {
 
   //reference msg collect
   var contactRef = firebase.database().ref('contact');
-  var leadRef = firebase.database().ref('lead');
+  var leadRef = firebase.database().ref('leads');
 
+if (document.getElementsByTagName('form').id == 'formAssinatura'){
 
  //FORMS DE ASSINATURA
   //form submit
@@ -32,12 +33,13 @@ var config = {
 
     //save message
     saveLead(email, name, ip, date, car, driver, antt);
+    console.log('oi');
 
     $('#formpoup').modal('hide');
 
     alert("Em breve voce receberá novas dicas!");
     }
-
+} else {
 
    //FORMS DE CONTATO
   document.getElementById('formContato').addEventListener('submit', submitFormContact);
@@ -57,12 +59,14 @@ var config = {
 
     if (document.getElementById('aceitaLead').checked === true) {
     saveLead(email, name, ip, date, car, driver, antt);
+    console.log('oi');
     }
     saveContact(email, name, ip, date, car, driver, antt, message);
+    console.log('oi');
 
     alert("Obrigado pelo contato!");
   }
-
+}
   //func para pegar os valores
   function getInputVal(id){
       return document.getElementById(id).value;
@@ -84,7 +88,7 @@ var config = {
   } 
 
   function saveContact(email, name, ip, date, car, driver, antt, message){
-    var newContacteRef = contactRef.push()
+    var newContactRef = contactRef.push()
 
     newContactRef.set({
         email: email,
