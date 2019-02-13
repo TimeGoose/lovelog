@@ -212,6 +212,13 @@ h1{
 		color: #0045DD;
 	}
 
+	.destaqueSobre{
+		padding-top: 50px;
+		padding-left: 65px;
+		text-align: left;
+		color: #0045DD;
+	}
+
 	section.conteudo h4 {
 		padding-top: 10px;
 		padding-left: 65px;
@@ -247,7 +254,32 @@ h1{
 		width: 100%;
 		
 	}
+	#backgroundContato{
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		text-align: center;	
+		background-image: url("../img/contato-img-back.jpg");
+		color: white;
+		height: 100%;
+		min-height: 1273px;
+		line-height: 5px;
+	}
 
+
+
+	.bannerSobre{
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		text-align: center;	
+		background-image: url("../img/bannerSobre.png");
+		color: white;
+		min-height: 468px;
+		line-height: 5px;
+	}
+
+	
 
 	.bannerHome{
 		background-repeat: no-repeat;
@@ -256,9 +288,10 @@ h1{
 		text-align: center;	
 		background-image: url("../img/02_Goose_Blog_banner.jpg");
 		color: white;
-		min-height: 400px;
+		min-height: 468px;
 		line-height: 5px;
 	}
+
 
 	.botaoHome {
 		width: 160px;
