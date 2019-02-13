@@ -142,10 +142,7 @@
 		  margin-top: 20px;
 	}
 
-	.card{
-		width: 33%;
-		border: 
-	}
+	
 
 	.card img{
 		width: 100%;
@@ -202,10 +199,10 @@
     		width: auto;
   }
 
-
-  .conteudo{
-  	display: block;
-  }
+  			.container{
+  				flex-direction: column;
+  			}
+  
 }
 
 
