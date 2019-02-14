@@ -240,7 +240,6 @@ h1{
 	}
 */
 
-	.inscreva-se{
 		
 	}
 	.inscrevase{
@@ -305,7 +304,7 @@ h1{
 		background-image: url("../img/motoristaIndependente.png");
 		max-width: 701px;
 		min-height: 276px;
-		padding: 100px 50px;
+		margin-top: 50px;
 		
 	}
 
