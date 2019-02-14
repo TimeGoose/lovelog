@@ -31,6 +31,22 @@ h1{
   margin-bottom: 50px;
 }
 
+h1.titulo-paragrafo{
+
+  width: 967px;
+  height: 90px;
+  object-fit: contain;
+  font-family: 'Open Sans';
+  font-size: 30px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.05;
+  letter-spacing: normal;
+  color: black;
+  margin-bottom: 10px;
+}
+
 .pnoticia{
 
   width: 970px;
@@ -46,8 +62,7 @@ h1{
   color: #696767;
   padding-left: 65px;
   text-align: left;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 
@@ -71,7 +86,7 @@ h1{
 	.titulo{
 		color: #0045DD;
 		text-align: center;
-		padding: 40px;
+		margin: 30px 0;
 	}
 
 	.bannerHome{
