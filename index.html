@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134378230-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-      gtag('config', 'UA-134378230-1');
-    </script>
-  
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LoveLOG</title>
-  
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-      crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous">
-    <link rel="shortcut icon" href="img/favicon_lovelog.ico" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-  
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-  
-    <!--funcao para pegar o ip-->
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $.get("https://api.ipify.org?format=json", function (data) {
-          $("#ip").html(data.ip);
-        });
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134378230-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-134378230-1');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>LoveLOG</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <link rel="shortcut icon" href="img/favicon_lovelog.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+  <!--funcao para pegar o ip-->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $.get("https://api.ipify.org?format=json", function (data) {
+        $("#ip").html(data.ip);
       });
-    </script>
-  </head>
+    });
+  </script>
+</head>
 
 <body>
   <header>
@@ -48,21 +48,21 @@
 
         <nav class="menu-desktop">
 
-            <ul>
-              <li><a href="inscrevase.html">INSCREVA-SE</a></li>
-              <li><a href="sobre.html">SOBRE</a></li>
-              <li><a href="contato.html">CONTATO</a></li>
-              <li><img src="img/busca.png"></li>
-            </ul>
-         </nav>
+          <ul>
+            <li><a href="inscrevase.html">INSCREVA-SE</a></li>
+            <li><a href="sobre.html">SOBRE</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+            <li><img src="img/busca.png"></li>
+          </ul>
+        </nav>
 
         <nav class="menu-mobile">
-            <h2><i class="fas fa-bars"></i></i></h2>
-            <ul>
-              <li><a href="inscrevase.html">INSCREVA-SE</a></li>
-              <li><a href="sobre.html">SOBRE</a></li>
-              <li><a href="contato.html">CONTATO</a></li>
-            </ul>
+          <h2><i class="fas fa-bars"></i></i></h2>
+          <ul>
+            <li><a href="inscrevase.html">INSCREVA-SE</a></li>
+            <li><a href="sobre.html">SOBRE</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+          </ul>
         </nav>
       </div><!-- container -->
     </div>
@@ -96,21 +96,21 @@
 
         <div class="col-sm-4 card">
           <a href="treinamentoesimuladores.html"><img src="img/home-img01-grande.jpg"></a>
-          <p>Dirigir por longas 
-          horas, muitas vezes em estradas que nem sempre...</p>
+          <p>Dirigir por longas
+            horas, muitas vezes em estradas que nem sempre...</p>
           <p><i class="fas fa-user"></i></i>WILLIAN TANG</p>
         </div>
 
-    <div class="col-sm-4 card" >
-      <a href="motoristaindependente.html"><img src="img/01_Goose_Blog_Entregador.jpg"></a>
-      <p>Existem duas formas de aumentar a sua renda: ou você gasta menos, ou você...</p>
-      <p><i class="fas fa-user"></i></i>WILLIAN TANG</p>
-    </div>
+        <div class="col-sm-4 card">
+          <a href="motoristaindependente.html"><img src="img/01_Goose_Blog_Entregador.jpg"></a>
+          <p>Existem duas formas de aumentar a sua renda: ou você gasta menos, ou você...</p>
+          <p><i class="fas fa-user"></i></i>WILLIAN TANG</p>
+        </div>
 
 
 
         <div class="col-sm-4 card">
-         <a href="jornadacaminhoneiro.html"> <img class="img-fluid" src="img/como-melhorar-saude-estrada-2.jpg"></a>
+          <a href="jornadacaminhoneiro.html"> <img class="img-fluid" src="img/como-melhorar-saude-estrada-2.jpg"></a>
           <p>A jornada puxada dos caminhoneiros pode levar a estilos de vida pouco...</p>
           <p><i class="fas fa-user"></i></i>WILLIAN TANG</p>
         </div>
@@ -122,7 +122,8 @@
   <section class="conteudo">
     <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 col-sm-12">
           <a href="treinamentoesimuladores.html"><img src="img/home-img01-pequena.jpg" class="img-fluid"></a>
           <p><i class="fas fa-user"></i></i>WILLIAN TANG</p>
           <a href="treinamentoesimuladores.html">
@@ -130,12 +131,12 @@
               Saiba agora como garantir segurança com os principais benefícios da capacitação e treinamento de
               motoristas
             </h1>
-            <h2 class="pnoticia">
           </a>
-          Dirigir por longas horas, muitas vezes em estradas que nem sempre estão em bom estado, com cargas pesadas,
-          horário para cumprir e muitas vezes de madrugada, não é fácil. Para você fazer diferença no mercado e ser
-          mais competitivo, deve aprender normas de conduta específicas dessa profissão.
-          </h4>
+          <h2 class="pnoticia">
+            Dirigir por longas horas, muitas vezes em estradas que nem sempre estão em bom estado, com cargas pesadas,
+            horário para cumprir e muitas vezes de madrugada, não é fácil. Para você fazer diferença no mercado e ser
+            mais competitivo, deve aprender normas de conduta específicas dessa profissão.
+          </h2>
         </div>
       </div>
     </div>
@@ -144,32 +145,36 @@
   <section class="conteudo">
     <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 col-sm-12">
           <a href="motoristaindependente.html"><img src="img/01_Goose_Blog_Entregador.jpg" class="img-fluid"></a>
           <p><i class="fas fa-user"></i></i>WILLIAN TANG</p>
 
-          <a href="motoristaindependente.html"><h1 class="destaque">
-            Motorista independente: vamos te mostrar o que você precisa saber para ganhar mais dinheiro, fazendo o mesmo que você já faz
-          </h1></a>
+          <a href="motoristaindependente.html">
+            <h1 class="destaque">
+              Motorista independente: vamos te mostrar o que você precisa saber para ganhar mais dinheiro, fazendo o
+              mesmo que você já faz
+            </h1>
+          </a>
 
           <h2 class="pnoticia">
             Existem duas formas de aumentar a sua renda: ou você gasta menos, ou você cria uma fonte de renda. Nesse
             post, nós vamos falar de como você pode aumentar a sua renda, fazendo o mesmo trabalho que já faz hoje!
             Fique tranquilo, você não precisa fazer jogo de azar, apostas ou empréstimos em banco...
-            </h4>
+          </h2>
         </div>
       </div>
     </div>
   </section>
 
-    <!--conteudo inscreva-se-->
-    <div class="container row justify-content-center p-4">
-        <div clas="col-12">
-        <p class="chamadaInscricao">RECEBA NOSSAS NOTICIAS POR E-MAIL</p>
-        <button type="button" class="botaoInscrevase" data-toggle="modal" data-target=".bd-example-modal-lg">Inscreva-se</button>
-      </div>
-      </div>
-    <!--fim conteudo inscreva-se-->
+  <!--conteudo inscreva-se-->
+  <div class="container row justify-content-center p-4">
+    <div clas="col-12">
+      <p class="chamadaInscricao">RECEBA NOSSAS NOTICIAS POR E-MAIL</p>
+      <button type="button" class="botaoInscrevase" data-toggle="modal" data-target=".bd-example-modal-lg">Inscreva-se</button>
+    </div>
+  </div>
+  <!--fim conteudo inscreva-se-->
 
   <!--
     <div class="pag-fim">
