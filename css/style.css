@@ -357,11 +357,11 @@ h1.titulo-paragrafo{
 
 
 .botaoHome {
-	width: 160px;
+	width: 200px;
 	height: 40px;
 	object-fit: left;
 	border-radius: 50px;
-	background-color: #ffffff;
+	background-color: white;
 
 	object-fit: contain;
 	font-family: 'Open Sans', sans-serif; 
