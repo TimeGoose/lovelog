@@ -219,6 +219,7 @@ h1.titulo-paragrafo{
 	}
 
 	.destaque{
+		font-size: 30px;
 		text-align: left;
 		color: #0045DD;
 	}
@@ -321,7 +322,7 @@ h1.titulo-paragrafo{
 	background-size: cover;
 	background-position: center;
 	text-align: center;	
-	background-image: url("../img/bannerSobre.png");
+	background-image: url("../img/sobre-img.jpg");
 	color: white;
 	min-height: 468px;
 	line-height: 5px;
