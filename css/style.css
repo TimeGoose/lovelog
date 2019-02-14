@@ -270,146 +270,8 @@ h1.titulo-paragrafo{
 		width: 100%;
 		
 	}
-	.backgroundContato{
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
-		text-align: center;	
-		background-image: url("../img/contato-img-back.jpg");
-		color: white;
-		height: 100%;
-		min-height: 1000px;
-	}
-
-	.backgroundInscrevaSe{
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
-		text-align: center;	
-		background-image: url("../img/inscricao-img-back.jpg");
-		color: white;
-		height: 100%;
-		min-height: 1000px;
-	}
-
-	.bannerSobre{
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
-		text-align: center;	
-		background-image: url("../img/bannerSobre.png");
-		color: white;
-		min-height: 468px;
-		line-height: 5px;
-	}
-
-	
-
-	.bannerHome{
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
-		text-align: center;	
-		background-image: url("../img/02_Goose_Blog_banner.jpg");
-		color: white;
-		min-height: 468px;
-		line-height: 5px;
-	}
-
-	.imagemPost{
-		text-align: right;
-		background-image: url("../img/motoristaIndependente.png");
-		max-width: 701px;
-		min-height: 276px;
-		margin-top: 15px;
-		margin-bottom: 30px;		
-	}
 
 
-	.botaoHome {
-		width: 160px;
-		height: 40px;
-		object-fit: left;
-		border-radius: 50px;
-		background-color: #ffffff;
-
-		object-fit: contain;
-		font-family: 'Open Sans', sans-serif; 
-		font-size: 18px;
-		font-weight: normal;
-		font-style: normal;
-		font-stretch: normal;
-		line-height: normal;
-		letter-spacing: normal;
-		color: #4a3f89;
-		font-style: bold;
-	  }
-
-	  .botaoInscrevase{
-		width: 260px;
-		height: 40px;
-		font-size: 16px;
-		color: white;
-		font-family: 'Open Sans', sans-serif; 
-	  object-fit: contain;
-	  border-radius: 100px;
-	  background-color: #4a3f89;
-	}
-
-	.chamadaInscricao{
-	width: 370px;
-	height: 33px;
-	font-family: 'Open Sans';
-	font-size: 16px;
-	font-weight: bold;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: normal;
-	letter-spacing: -0.4px;
-	color: #0045dd;
-	}
-
-	  .botaoContato {
-			width: 168px;
-			height: 45px;
-			font-family: 'Open Sans';
-			font-size: 18px;
-			font-weight: normal;
-			font-style: normal;
-			font-stretch: normal;
-			line-height: normal;
-			letter-spacing: normal;
-			color: #0045dd;
-			border-radius: 100px;
-			background-color: #24ecf8;
-		  }
-	  
-	.form-text-white{
-		color: white;
-		font-size: 16px;
-		font-family: 'Open Sans'; 
-		text-align: center;	
-	}
-	
-	.form-text-contato{
-		color: white;
-		font-size: 18px;
-		font-family: 'Open Sans'; 
-		text-align: center;	
-		line-height: normal;
-	}
-
-	.Contato {
-		font-family: 'Open Sans';
-		font-size: 50px;
-		font-weight: bold;
-		font-style: normal;
-		font-stretch: normal;
-		line-height: 1.05;
-		letter-spacing: -0.6px;
-		color: #ffffff;
-		text-align: start;
-	  }
 
 	/* Mobile */
 		@media screen and (max-width: 768px){
@@ -434,4 +296,148 @@ h1.titulo-paragrafo{
 
 
 		}
+
+
+		/* STYLES GUSTAVO*/
+
+.backgroundContato{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;	
+	background-image: url("../img/contato-img-back.jpg");
+	color: white;
+	height: 100%;
+	min-height: 1000px;
+}
+
+.backgroundInscrevaSe{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;	
+	background-image: url("../img/inscricao-img-back.jpg");
+	color: white;
+	height: 100%;
+	min-height: 1000px;
+}
+
+.bannerSobre{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;	
+	background-image: url("../img/bannerSobre.png");
+	color: white;
+	min-height: 468px;
+	line-height: 5px;
+}
+
+
+
+.bannerHome{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;	
+	background-image: url("../img/02_Goose_Blog_banner.jpg");
+	color: white;
+	min-height: 468px;
+	line-height: 5px;
+}
+
+.imagemPost{
+	text-align: right;
+	background-image: url("../img/motoristaIndependente.png");
+	max-width: 701px;
+	min-height: 276px;
+	margin-top: 15px;
+	margin-bottom: 30px;		
+}
+
+
+.botaoHome {
+	width: 160px;
+	height: 40px;
+	object-fit: left;
+	border-radius: 50px;
+	background-color: #ffffff;
+
+	object-fit: contain;
+	font-family: 'Open Sans', sans-serif; 
+	font-size: 18px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #4a3f89;
+	font-style: bold;
+  }
+
+  .botaoInscrevase{
+	width: 260px;
+	height: 40px;
+	font-size: 16px;
+	color: white;
+	font-family: 'Open Sans', sans-serif; 
+  object-fit: contain;
+  border-radius: 100px;
+  background-color: #4a3f89;
+}
+
+.chamadaInscricao{
+width: 370px;
+height: 33px;
+font-family: 'Open Sans';
+font-size: 16px;
+font-weight: bold;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: -0.4px;
+color: #0045dd;
+}
+
+  .botaoContato {
+		width: 168px;
+		height: 45px;
+		font-family: 'Open Sans';
+		font-size: 18px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: #0045dd;
+		border-radius: 100px;
+		background-color: #24ecf8;
+	  }
+  
+.form-text-white{
+	color: white;
+	font-size: 16px;
+	font-family: 'Open Sans'; 
+	text-align: center;	
+}
+
+.form-text-contato{
+	color: white;
+	font-size: 18px;
+	font-family: 'Open Sans'; 
+	text-align: center;	
+	line-height: normal;
+}
+
+.Contato {
+	font-family: 'Open Sans';
+	font-size: 50px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.05;
+	letter-spacing: -0.6px;
+	color: #ffffff;
+	text-align: start;
+  }
 
