@@ -219,6 +219,7 @@ h1.titulo-paragrafo{
 	}
 
 	.destaque{
+		font-size: 30px;
 		text-align: left;
 		color: #0045DD;
 	}
