@@ -46,6 +46,8 @@ h1{
   color: #696767;
   padding-left: 65px;
   text-align: left;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 
@@ -300,12 +302,12 @@ h1{
 	}
 
 	.imagemPost{
-		background-position: center;
+		text-align: right;
 		background-image: url("../img/motoristaIndependente.png");
 		max-width: 701px;
 		min-height: 276px;
-		margin-top: 50px;
-		
+		margin-top: 15px;
+		margin-bottom: 30px;		
 	}
 
 
@@ -339,7 +341,6 @@ h1{
 			line-height: normal;
 			letter-spacing: normal;
 			color: #0045dd;
-
 			border-radius: 100px;
 			background-color: #24ecf8;
 		  }
