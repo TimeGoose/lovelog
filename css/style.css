@@ -300,6 +300,15 @@ h1{
 		line-height: 5px;
 	}
 
+	.imagemPost{
+		background-position: center;
+		background-image: url("../img/motoristaIndependente.png");
+		max-width: 701px;
+		min-height: 276px;
+		padding: 100px 50px;
+		
+	}
+
 
 	.botaoHome {
 		width: 160px;
