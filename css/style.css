@@ -49,10 +49,8 @@ h1.titulo-paragrafo{
 
 .pnoticia{
 
-  width: 970px;
-  height: 77px;
   object-fit: contain;
-  font-family: OpenSans;
+  font-family: 'Open Sans';
   font-size: 20px;
   font-weight: normal;
   font-style: normal;
