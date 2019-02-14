@@ -141,7 +141,7 @@ h1.titulo-paragrafo{
 	}
 
 	nav.menu-mobile li.selecionado{
-		background: #04B4AE;
+		font-weight: bold;
 	}
 
 
