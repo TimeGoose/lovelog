@@ -39,45 +39,45 @@
 </head>
 
 <body>
-<header>
+  <header>
 
     <div class="topo">
-    <div class="container">
+      <div class="container">
 
-          <div class="logo"><a href="index.html"><img src="img/logo_lovelog.svg" height="37" alt="Logo LoveLOG"></a></div>
+        <div class="logo"><a href="index.html"><img src="img/logo_lovelog.svg" height="37" alt="Logo LoveLOG"></a></div>
 
         <nav class="menu-desktop">
-            <ul>
-              <li><a href="index.html">INSCREVA-SE</a></li>
-              <li><a href="sobre.html">SOBRE</a></li>
-              <li><a href="contato.html">CONTATO</a></li>
-              <li><img src="img/busca.png"></li>
-            </ul>
-         </nav>
+          <ul>
+            <li><a href="index.html">INSCREVA-SE</a></li>
+            <li><a href="sobre.html">SOBRE</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+            <li><img src="img/busca.png"></li>
+          </ul>
+        </nav>
 
         <nav class="menu-mobile">
-            <h2><i class="fas fa-bars"></i></i></h2>
-            <ul>
-              <li><a href="index.html"></a>INSCREVA-SE</li>
-              <li><a href="sobre.html"></a>SOBRE</li>
-              <li><a href="contato.html"></a>CONTATO</li>
-            </ul>
+          <h2><i class="fas fa-bars"></i></i></h2>
+          <ul>
+            <li><a href="index.html"></a>INSCREVA-SE</li>
+            <li><a href="sobre.html"></a>SOBRE</li>
+            <li><a href="contato.html"></a>CONTATO</li>
+          </ul>
         </nav>
-    </div><!-- container -->
-  </div>
-</header>
+      </div><!-- container -->
+    </div>
+  </header>
 
-    <!--CONTEUDO-->
+  <!--CONTEUDO-->
   <div class="container">
 
-  <div class="imagemPost"></div>
+    <div class="imagemPost"></div>
 
 
     <h1>Motorista Independente: Vamos te mostrar o que você precisa saber para ganhar mais dinheiro, fazendo o mesmo
       que
       você já faz </h1>
 
-    
+
 
     <p>Existem duas formas de aumentar a sua renda: ou você gasta menos, ou você cria uma fonte de renda.
       Nesse post, nós vamos falar de como você pode aumentar a sua renda, fazendo o mesmo trabalho que já faz hoje!
@@ -166,26 +166,34 @@
         <li>Para o motorista: receber as ofertas de frete das redes que foi cadastrado.</li>
       </ul>
     </p>
-    Gostou do conteúdo? Quer ficar por dentro de mais coisas legais, só se na nossa página!
   </div>
 
+  <!--conteudo inscreva-se-->
+  <div class="container row justify-content-center p-4">
+    <div clas="col-12">
+    <p class="chamadaInscricao">RECEBA NOSSAS NOTICIAS POR E-MAIL</p>
+    <button type="button" class="botaoInscrevase" data-toggle="modal" data-target=".bd-example-modal-lg">Inscreva-se</button>
+  </div>
+  </div>
+<!--fim conteudo inscreva-se-->
 
- <section class="mini-conteudo">
+
+  <section class="mini-conteudo">
     <div class="container">
       <div class="row">
 
 
-          <div class="col-sm-4 card">
-            <a href="treinamentoesimuladores.html"><img src="img/home-img01-grande.jpg"></a>
-            <p>Dirigir por longas horas, muitas vezes em estradas que nem sempre...</p>
-            <p><i class="fas fa-user"></i></i>WILLIAN TANG</p>
-          </div>
+        <div class="col-sm-4 card">
+          <a href="treinamentoesimuladores.html"><img src="img/home-img01-grande.jpg"></a>
+          <p>Dirigir por longas horas, muitas vezes em estradas que nem sempre...</p>
+          <p><i class="fas fa-user"></i></i>WILLIAN TANG</p>
+        </div>
 
-    <div class="col-sm-4 card" >
-      <a href="motoristaindependente.html"><img src="img/01_Goose_Blog_Entregador.jpg"></a>
-      <p>Existem duas formas de aumentar a sua renda: ou você gasta menos, ou você...</p>
-      <p><i class="fas fa-user"></i></i>WILLIAN TANG</p>
-    </div>
+        <div class="col-sm-4 card">
+          <a href="motoristaindependente.html"><img src="img/01_Goose_Blog_Entregador.jpg"></a>
+          <p>Existem duas formas de aumentar a sua renda: ou você gasta menos, ou você...</p>
+          <p><i class="fas fa-user"></i></i>WILLIAN TANG</p>
+        </div>
 
 
 
@@ -206,7 +214,7 @@
     <div class="container">
       <div>
 
-      <div class="logo"><a href="index.html"><img src="img/logo_lovelog.svg" height="37" alt="Logo LoveLOG"></a></div><!-- incluir redes sociais -->     
+        <div class="logo"><a href="index.html"><img src="img/logo_lovelog.svg" height="37" alt="Logo LoveLOG"></a></div><!-- incluir redes sociais -->
       </div>
       <div class="clear"></div>
 
@@ -218,24 +226,90 @@
         <p>Nosso E-mail: lovelog@outlook.com.br</p>
       </div>
 
-    </div><!--container -->
+    </div>
+    <!--container -->
   </footer>
 
+
+  <!--FORMULARIO POUPUP-->
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true" id="formpoup">
+    <div class="modal-dialog p-3 modal-lg">
+      <div class="modal-content p-4" style="background-color:#4a3f89">
+        <div class="modal-body">
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+          <!---inicio form-->
+          <form id="formAssinatura">
+            <div class="form-group">
+              <label for="InputName" class="form-text-white">Nome</label>
+              <input type="text" class="form-control" id="name" placeholder="Seu nome" required>
+            </div>
+            <div class="form-group">
+              <label for="InputEmail" class="form-text-white">Endereço de email</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Seu email"
+                required>
+              <small id="emailHelp" class="form-text text-light">Não vamos compartilhar seu email, com
+                ninguém.</small>
+            </div>
+            <div class="form-group">
+              <label for="InputCar" class="form-text-white">O seu veículo tem um porte proximo de:</label>
+              <select id="car" class="form-control" placeholder="Seu carro">
+                <option selected>Selecione...</option>
+                <option>Moto</option>
+                <option>Van</option>
+                <option>Fiorino</option>
+                <option>Vuc Pequeno (HR)</option>
+                <option>Vuc Médio (Iveco)</option>
+                <option>Vuc Grande</option>
+                <option>Nenhum</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="inputState" class="form-text-white">Você trabalha/quer trabalhar com entregas para ganhar
+                mais dinheiro?</label>
+              <select id="driver" class="form-control">
+                <option selected>Selecione...</option>
+                <option>Sim</option>
+                <option>Não</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="inputState" class="form-text-white">Você tem ANTT ou Condumoto/Motofrete?</label>
+              <select id="antt" class="form-control">
+                <option selected>Selecione...</option>
+                <option>Sim</option>
+                <option>Não</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn ENVIAR Rectangle-43">Enviar</button><br>
+              <input hidden id="ip">
+            </div>
+          </form>
+          <!---fim form-->
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!--SCRIPTS USADOS-->
 
   <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main_ass.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script>
-    $('nav.menu-mobile h2').click(function(){
+    $('nav.menu-mobile h2').click(function () {
       $('nav.menu-mobile ul').slideToggle();
     });
   </script>
 </body>
+
 </html>
