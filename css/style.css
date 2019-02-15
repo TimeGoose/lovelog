@@ -327,16 +327,6 @@ h1.titulo-paragrafo{
 	line-height: 5px;
 }
 
-.imagemPost{
-	text-align: right;
-	background-image: url("../img/motoristaIndependente.png");
-	max-width: 701px;
-	min-height: 276px;
-	margin-top: 15px;
-	margin-bottom: 30px;		
-}
-
-
 .botaoHome {
 	width: 200px;
 	height: 40px;
