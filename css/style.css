@@ -453,9 +453,11 @@ color: #0045dd;
   				padding: 10px 15px;
   			}
 
-  			.correcao{ /*classe para comportamneto estrando de espaçamento */
-				padding-bottom: 40px;
+  			.correcao{ /*classe para corrigir comportamneto estrando de espaçamento */
+				padding-bottom: 60px;
+				margin-top: 15px;
   			}
+
 		}
 /* Mobile -- Manter os códigos mobile no fim do arquivo */ 
 
