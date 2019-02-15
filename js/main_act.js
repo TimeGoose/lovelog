@@ -31,7 +31,7 @@ var config = {
     saveLead(email, name, ip, date, company);
     console.log(email, name, ip, company);
     
-    alert("");
+    alert("Obrigado!! Aguarde 1 segundo..");
 
     window.location.href = "http://lovelog.com.br/transportadorasemfrotacont.html";
     }
