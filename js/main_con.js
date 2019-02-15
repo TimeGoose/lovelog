@@ -37,8 +37,10 @@ var config = {
     saveContact(email, name, ip, date, car, driver, antt, message);
     console.log('oi');
 
-
     alert("Obrigado pelo contato!");
+
+    window.location.href = "http://lovelog.com.br/";
+    
   }
 
   //func para pegar os valores
