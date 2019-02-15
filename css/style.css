@@ -30,8 +30,8 @@ h1{
   line-height: 1.05;
   letter-spacing: normal;
   color: #0045dd;
-  margin-bottom: 20px;
-  margin-top: 30px;
+  margin-bottom: 15px;
+  margin-top: 5px;
 }
 
 h1.titulo-paragrafo{
@@ -45,7 +45,7 @@ h1.titulo-paragrafo{
   line-height: 1.05;
   letter-spacing: normal;
   color: black;
-  margin: 15px 0;
+  padding-bottom: 30px 0;
 }
 
 h3{
@@ -69,7 +69,8 @@ h3{
   line-height: normal;
   letter-spacing: normal;
   color: #696767;
-  margin: 20px 0;
+  
+  padding-bottom: 70px;
 }
 
 
