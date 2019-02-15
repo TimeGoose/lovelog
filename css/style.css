@@ -53,6 +53,13 @@ h3{
 	text-align: center;
 	padding: 20px 0;
 }
+.pnoticia li{
+	margin-right: 10px;
+}
+
+.titulo{
+	margin-top: 48px;
+}
 
 .img-post{
 	text-align: center;
@@ -68,9 +75,22 @@ h3{
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #696767;
+  color: #696767; 
+  padding-bottom: 40px;
+}
+
+.pnoticia2{
+
+  object-fit: contain;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #696767; 
   
-  padding-bottom: 70px;
 }
 
 
