@@ -5,6 +5,10 @@
 	font-family: 'Open Sans', sans-serif; 
 }
 
+.container{
+	max-width: 970px;
+}
+
 /*body contato*/
 #imagem{
 	background-image: url(img/inscricao-img-back.jpg);
@@ -27,11 +31,10 @@ h1{
   letter-spacing: normal;
   color: #0045dd;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 h1.titulo-paragrafo{
-
-  width: 967px;
   height: 40px;
   object-fit: contain;
   font-family: 'Open Sans';
@@ -42,7 +45,11 @@ h1.titulo-paragrafo{
   line-height: 1.05;
   letter-spacing: normal;
   color: black;
-  margin-bottom: 10px;
+  margin: 15px 0;
+}
+
+.img-post{
+	text-align: center;
 }
 
 .pnoticia{
@@ -56,8 +63,7 @@ h1.titulo-paragrafo{
   line-height: normal;
   letter-spacing: normal;
   color: #696767;
-  text-align: justify;
-  margin-bottom: 40px;
+  margin: 20px 0;
 }
 
 
@@ -78,11 +84,7 @@ h1.titulo-paragrafo{
 		float: left;
 	}
 
-	.titulo{
-		color: #0045DD;
-		text-align: center;
-		margin: 30px 0;
-	}
+	
 
 	.bannerHome{
 		background-repeat: no-repeat;
@@ -151,6 +153,10 @@ h1.titulo-paragrafo{
 		text-decoration: none;
 	}
 
+	nav.menu-mobile i{
+		color: white;
+	}
+
 	
 
 	nav.menu-desktop{
@@ -167,27 +173,22 @@ h1.titulo-paragrafo{
 
 	.rodape{
 	  width: 100%;
-	  height: 120px;
+	  height: 140px;
 	  background-color: #4a3f89;
 	  margin-top: 100px;
-
 	}
+
+	
+	.rodape a{
+		text-decoration: none;
+		color: #fff;
+	} 
 
 	.rodape img{
 		margin-top: 20px;
-	}	 
-
-	.direitos p{
-		display: inline;
-		padding-right: 40px;		
-	} 
-
-	.direitos a{
-		text-decoration: none;
-		color: #ffffff;
 	}
 	
-	.direitos{
+	.rodape p{
 		  font-family: OpenSans;
 		  font-size: 15px;
 		  font-weight: 300;
@@ -197,6 +198,7 @@ h1.titulo-paragrafo{
 		  letter-spacing: normal;
 		  color: #ffffff;
 		  margin-top: 20px;
+		  background-color: #4a3f89;
 	}
 
 	.mini-conteudo{
@@ -242,18 +244,9 @@ h1.titulo-paragrafo{
 		padding-left: 65px;
 		text-align: left;
 	}
-/*
-	.quad{
-		 
-	  width: 40px;
-	  height: 40px;
-	  background-color: #4a3f89;
-	  color: white;
-	}
-*/
 
-		
-	
+
+			
 	.inscrevase{
 		position: relative;
 		background-size: cover;
@@ -267,31 +260,9 @@ h1.titulo-paragrafo{
 	}
 
 
+	
 
-	/* Mobile */
-		@media screen and (max-width: 768px){
-
-			nav.menu-mobile{display: block;}
-			nav.menu-desktop{display: none;}
-
-			@media print {
- 			.container {
-    		width: auto;
-  }
-
-  			.container{
-  				flex-direction: column;
-  			}
-
-  		
-  
-}
-
-
-
-
-		}
-
+/*   Time Goose    */
 
 		/* STYLES GUSTAVO*/
 
@@ -340,16 +311,6 @@ h1.titulo-paragrafo{
 	min-height: 468px;
 	line-height: 5px;
 }
-
-.imagemPost{
-	text-align: right;
-	background-image: url("../img/motoristaIndependente.png");
-	max-width: 701px;
-	min-height: 276px;
-	margin-top: 15px;
-	margin-bottom: 30px;		
-}
-
 
 .botaoHome {
 	width: 200px;
@@ -442,6 +403,7 @@ color: #0045dd;
 	text-align: start;
   }
 
+
   .contato-text {
 	font-family: 'Open Sans';
 	font-size: 20px;
@@ -453,3 +415,36 @@ color: #0045dd;
 	color: #ffffff;
 	text-align: start;
   }
+
+  /* Larguma máxima da tela */
+ @media (min-width: 1200px) { 
+ 	.container{max-width: 970px;}
+ 	.correcao{ /*classe para corrigir comportamneto estrando de espaçamento */
+				
+				padding-bottom: 70px;
+  			}
+}
+
+
+/* Mobile -- Manter os códigos mobile no fim do arquivo */ 
+		@media screen and (max-width: 768px){
+
+			nav.menu-mobile{display: block;}
+			nav.menu-desktop{display: none;}
+
+  			.rodape{height: 450px;}
+
+  			h2, h1, p{
+  				padding: 10px 15px;
+  			}
+
+  			.correcao{ /*classe para corrigir comportamneto estrando de espaçamento */
+				padding-bottom: 100px;
+				margin-top: 30px;
+  			}
+
+		}
+/* Mobile -- Manter os códigos mobile no fim do arquivo */ 
+
+
+
