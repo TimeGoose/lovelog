@@ -49,7 +49,7 @@ h1.titulo-paragrafo{
 
   object-fit: contain;
   font-family: 'Open Sans';
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -422,6 +422,14 @@ color: #0045dd;
 	line-height: normal;
 }
 
+.form-text-contato2{
+	color: white;
+	font-size: 18px;
+	font-family: 'Open Sans'; 
+	text-align: right;	
+	line-height: normal;
+}
+
 .Contato {
 	font-family: 'Open Sans';
 	font-size: 50px;
@@ -434,3 +442,14 @@ color: #0045dd;
 	text-align: start;
   }
 
+  .contato-text {
+	font-family: 'Open Sans';
+	font-size: 20px;
+	font-weight: lighter;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.05;
+	letter-spacing: -0.6px;
+	color: #ffffff;
+	text-align: start;
+  }
