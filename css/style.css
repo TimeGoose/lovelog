@@ -30,7 +30,7 @@ h1{
   line-height: 1.05;
   letter-spacing: normal;
   color: #0045dd;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-top: 30px;
 }
 
@@ -46,6 +46,12 @@ h1.titulo-paragrafo{
   letter-spacing: normal;
   color: black;
   margin: 15px 0;
+}
+
+h3{
+	color: #0045dd;
+	text-align: center;
+	padding: 20px 0;
 }
 
 .img-post{
@@ -214,11 +220,6 @@ h1.titulo-paragrafo{
 		padding-right: 5px;
 	}
 	
-	section.conteudo{
-		
-		margin-top: 50px;
-		text-align: center;
-	}
 
 	.destaque{
 		font-size: 30px;
