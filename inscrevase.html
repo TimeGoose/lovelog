@@ -14,7 +14,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Inscreva-se</title>
+
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -27,6 +27,15 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+  <!--meta-->
+  <title>LoveLOG - Inscreva-se</title>
+  <meta name="title" content="LoveLOG - Conteudo: Inscreva-se">
+  <meta name="description" content="LoveLOG BLOG" />
+  <meta name="keywords" content="lovelog, motorista, moto, carro, caminhao, logistica, transportadora, sem, frota, aplicativos, treinamentos, simuladores">
+
+  <!--fim meta-->
+
 
   <!--funcao para pegar o ip-->
   <script type="text/javascript">
@@ -95,7 +104,7 @@
             <option>Fiorino</option>
             <option>Vuc Pequeno (HR)</option>
             <option>Vuc Médio (Iveco)</option>
-            <option>Vuc Grande</option>
+            <option>Vuc Grande (Caminhão 3/4)</option>
             <option>Nenhum</option>
           </select>
         </div>
@@ -162,35 +171,35 @@
 
 
 
-<!-- rodape -->
-  <footer class="rodape"> 
+  <!-- rodape -->
+  <footer class="rodape">
     <div class="container">
-      <div class = "row">
-      <div class="col-xs-12 col-md-12" >
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
           <div class="logo"><a href="index.html"><img src="img/logo_lovelog.svg" height="37" alt="Logo LoveLOG"></a></div><!-- incluir redes sociais -->
+        </div>
+        <div class="clear"></div>
       </div>
-      <div class="clear"></div>
-      </div>
-      <div class = "row">
+      <div class="row">
         <div class="col-xs-12 col-lg-5">
           <p>LoveLog - Todos os direitos reservados.</p>
         </div>
         <div class="col-xs-12 col-lg-1">
-          <p><a href="index.html">Página Inicial</a></p>        
+          <p><a href="index.html">Página Inicial</a></p>
         </div>
         <div class="col-xs-12 col-lg-1">
-           <p><a href="sobre.html">Sobre</a></p>
+          <p><a href="sobre.html">Sobre</a></p>
         </div>
         <div class="col-xs-12 col-lg-1">
           <p><a href="contato.html">Contato</a></p>
         </div>
         <div class="col-xs-12 col-lg-4">
-           <p>Nosso E-mail: lovelog@outlook.com.br</p>
+          <p>Nosso E-mail: lovelog@outlook.com.br</p>
         </div>
       </div>
-      </div>
-   </footer>
-<!-- rodape -->
+    </div>
+  </footer>
+  <!-- rodape -->
 
 
   <!--SCRIPTS USADOS-->
@@ -200,6 +209,16 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+    document.getElementById('formAssinatura').addEventListener('submit', redirect);
+
+    function redirect(e) {
+      setTimeout(() => {
+        window.location.href = "http://lovelog.com.br/";
+      }, 1500);
+    }
+  </script>
 
   <script>
     $('nav.menu-mobile h2').click(function () {
