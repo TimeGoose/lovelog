@@ -32,7 +32,6 @@ var config = {
 
     //save message
     saveLead(email, name, ip, date, car, driver, antt);
-    console.log('oi');
 
     $('#formpoup').modal('hide');
 

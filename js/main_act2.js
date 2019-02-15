@@ -10,13 +10,13 @@ var config = {
   firebase.initializeApp(config);
 
   //reference msg collect
-  var contactRef = firebase.database().ref('contact');
   var leadRef = firebase.database().ref('leads');
 
-   //FORMS DE CONTATO
-  document.getElementById('formContato').addEventListener('submit', submitFormContact);
+ //FORMS DE ASSINATURA
+  //form submit
+  document.getElementById('formAssinatura').addEventListener('submit', submitForm);
 
-  function submitFormContact(e){
+  function submitForm(e){
     e.preventDefault();
 
     //get values
@@ -27,55 +27,37 @@ var config = {
     let car = getInputVal('car');
     let driver = getInputVal('driver');
     let antt = getInputVal('antt');
-    let message = getInputVal('message');
 
-    if (document.getElementById('aceitaLead').checked === true) {
-    saveLead(email, name, ip, date, car, driver, antt);    
+    //save message
+    saveLead(email, name, ip, date, car, driver, antt);
     console.log('oi');
 
+    alert("Obrigado!! Aguarde 1 segundo..");
+
+    window.location.href = "http://lovelog.com.br/contmudancalegislacao.html";
     }
-    saveContact(email, name, ip, date, car, driver, antt, message);
-
-    alert("Obrigado pelo contato!");
-
-    window.location.href = "http://lovelog.com.br/";
-    
-  }
 
   //func para pegar os valores
   function getInputVal(id){
       return document.getElementById(id).value;
   }
 
-  //save msg to firebase
-  function saveLead(email, name, ip, date, car, driver, antt){
-      var newLeadRef = leadRef.push()
 
-      newLeadRef.set({
-          email: email,
-          name: name,
-          ip: ip,
-          date: date,
-          car: car,
-          driver: driver,
-          antt: antt
-      });
-  } 
+//save msg to firebase
+function saveLead(email, name, ip, date, car, driver, antt){
+    var newLeadRef = leadRef.push()
 
-  function saveContact(email, name, ip, date, car, driver, antt, message){
-    var newContactRef = contactRef.push()
-
-    newContactRef.set({
+    newLeadRef.set({
         email: email,
         name: name,
         ip: ip,
         date: date,
         car: car,
         driver: driver,
-        antt: antt,
-        message: message
+        antt: antt
     });
 } 
+
 
   function completeDate () {
     now = new Date();

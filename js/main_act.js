@@ -29,7 +29,6 @@ var config = {
 
     //save message
     saveLead(email, name, ip, date, company);
-    console.log(email, name, ip, company);
     
     alert("Obrigado!! Aguarde 1 segundo..");
 
