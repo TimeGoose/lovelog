@@ -181,7 +181,7 @@ h1.titulo-paragrafo{
 	
 	.rodape a{
 		text-decoration: none;
-		color: #ffffff;
+		color: #fff;
 	} 
 
 	.rodape img{
@@ -244,18 +244,9 @@ h1.titulo-paragrafo{
 		padding-left: 65px;
 		text-align: left;
 	}
-/*
-	.quad{
-		 
-	  width: 40px;
-	  height: 40px;
-	  background-color: #4a3f89;
-	  color: white;
-	}
-*/
 
-		
-	
+
+			
 	.inscrevase{
 		position: relative;
 		background-size: cover;
